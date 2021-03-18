@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.homeMaim{
+    padding: 0;
+    margin: 0px 50px;
+    background-image: url(../../Image/bg1.jpg);
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.nav{
+    padding:50px 150px;
+    display:flex;
+    
+}
+.section {
+    padding-left: 200px;
+    
+}
+.navlink{
+    padding-left: 20px;
+    font-size: 20px;
+    color:rgb(3, 3, 7);
+}
+ .log{
+    margin-left: 20px;
+    padding:5px 10px;
+    background-color: tomato;
+    border-radius: 10px;
+}
+.images{
+    margin: 100px;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.images .card{
+
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 10px;
+    border: blueviolet 1px solid;
+}
+.card img{
+    width: 200px;
+}
+.card .button{
+    margin-left: 20px;
+    padding:5px 20px;
+    background-color: rgb(172, 71, 255);
+    border-radius: 10px;
+}
