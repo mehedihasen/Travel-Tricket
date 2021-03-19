@@ -10,22 +10,30 @@ import {
 import NotFound from './Component/NotFoun/NotFound';
 import Home from './Component/Home/Home'
 import LogIn from './Component/LogInPages/LogIn';
+import Distenc from './Component/Distenc/Distenc';
+import Booking from './Component/Booking/Booking';
+import PrivetRout from './Component/PrivetRout/PrivetRout'
 
 export const contextSher = createContext();
 function App() {
-  const [logInfo, setLogInfo] = useState()
+  const [logInfo, setLogInfo] = useState({})
   return (
-    <contextSher.Provider value={logInfo, setLogInfo}>
-      <Router> 
+    <contextSher.Provider value={[logInfo, setLogInfo]}>
+      <Router>
         <Switch>
           <Route path="/Home">
             <Home></Home>
           </Route>
-          <Route exact path="/">
-            <Home/>
-          </Route>
           <Route exact path="/LogIn">
-            <LogIn/>
+            <LogIn />
+          </Route>
+          <PrivetRout path="/Booking">
+           <Booking></Booking>
+          </PrivetRout>
+
+
+          <Route exact path="/">
+            <Home />
           </Route>
           <Route path="*">
             <NotFound></NotFound>
