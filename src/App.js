@@ -10,9 +10,10 @@ import {
 import NotFound from './Component/NotFoun/NotFound';
 import Home from './Component/Home/Home'
 import LogIn from './Component/LogInPages/LogIn';
-import Distenc from './Component/Distenc/Distenc';
 import Booking from './Component/Booking/Booking';
 import PrivetRout from './Component/PrivetRout/PrivetRout'
+import Foram from './Component/Foram/Foram';
+import Loction from './Component/Loction/Loction';
 
 export const contextSher = createContext();
 function App() {
@@ -24,13 +25,15 @@ function App() {
           <Route path="/Home">
             <Home></Home>
           </Route>
+          <PrivetRout path="/loction/:name">
+            <Loction/>
+          </PrivetRout>
           <Route exact path="/LogIn">
             <LogIn />
           </Route>
-          <PrivetRout path="/Booking">
-           <Booking></Booking>
-          </PrivetRout>
-
+         <Route path ="/Foram">
+           <Foram></Foram>
+         </Route>
 
           <Route exact path="/">
             <Home />

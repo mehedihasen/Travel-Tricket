@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.mainloc{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-gap: 20px;
+}
+.serchloc{
+    margin: 100px;
+    background-color: rgb(241, 233, 233);
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+;
+    
+
+}

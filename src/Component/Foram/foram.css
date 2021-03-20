@@ -1,0 +1,10 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.continer{
+    margin: 150px 300px;
+    padding:50px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
