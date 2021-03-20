@@ -4,16 +4,14 @@ import React, { createContext, useState } from "react";
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import NotFound from './Component/NotFoun/NotFound';
 import Home from './Component/Home/Home'
 import LogIn from './Component/LogInPages/LogIn';
-import Booking from './Component/Booking/Booking';
 import PrivetRout from './Component/PrivetRout/PrivetRout'
-import Foram from './Component/Foram/Foram';
 import Loction from './Component/Loction/Loction';
+import Creatacc from './Component/Createacc/Creatacc';
 
 export const contextSher = createContext();
 function App() {
@@ -31,12 +29,11 @@ function App() {
           <Route exact path="/LogIn">
             <LogIn />
           </Route>
-         <Route path ="/Foram">
-           <Foram></Foram>
-         </Route>
-
           <Route exact path="/">
             <Home />
+          </Route>
+          <Route exact path="/Creatacc">
+            <Creatacc/>
           </Route>
           <Route path="*">
             <NotFound></NotFound>

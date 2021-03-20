@@ -1,15 +1,11 @@
-import React, { useContext, } from 'react';
+import React from 'react';
 import "./home.css"
-import { contextSher } from '../../App';
 import Booking from '../Booking/Booking';
 import { Link } from 'react-router-dom';
 
 
 
 const Home = () => {
-
-    const [logInfo, setLogInfo] = useContext(contextSher)
-   
     return (
 
         <div className='homeMaim'>
