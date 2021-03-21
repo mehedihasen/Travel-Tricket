@@ -9,14 +9,7 @@ const Creatacc = () => {
 
     const [logInfo, setLogInfo] = useContext(contextSher);
     console.log("contex :", logInfo);
-    
-    // const [user, setUser] = useState({
-    //     email :'',
-    //     password :'',
-    //     name : '',
-    //     error:'',
-    //     succes : false
-    // })
+   
     if (firebase.apps.length === 0) {
         firebase.initializeApp(firebaseConfig)
     }

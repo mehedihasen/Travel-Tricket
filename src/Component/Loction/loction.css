@@ -3,17 +3,51 @@
     margin: 0;
 }
 .mainloc{
+   
+}
+.serchloc{
     display: grid;
     grid-template-columns:repeat(2, 1fr);
     grid-gap: 20px;
-}
-.serchloc{
     margin: 100px;
     background-color: rgb(241, 233, 233);
     border-radius: 10px;
     padding: 20px;
     width: 300px;
-;
+}
+.info{
+   
+    width: 30%;
+    padding:10px;
+    margin: 100px;
+    background-color: rgb(126, 123, 121);
+    color:black;
+}
+.info img{
+    width: 50px;
+}
+.info span{
+    
+    padding: 10px;
+    margin: 10px;
+}
+.rideInfo{
+    background-color: white;
+
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.dis{
+    padding: 5opx;
+    margin: 20px;
+    background-color: tomato;
+    border-radius: 10px;
+}
+.dis h3{
+    padding: 10px;
+    margin: 20px;
+    color: white;
+}
     
 
-}

@@ -26,13 +26,13 @@ function App() {
           <PrivetRout path="/loction/:name">
             <Loction/>
           </PrivetRout>
-          <Route exact path="/LogIn">
+          <Route  path="/LogIn">
             <LogIn />
           </Route>
           <Route exact path="/">
             <Home />
           </Route>
-          <Route exact path="/Creatacc">
+          <Route  path="/Creatacc">
             <Creatacc/>
           </Route>
           <Route path="*">
