@@ -130,8 +130,8 @@ const LogIn = () => {
             </div>
             <Link to="/Creatacc">Create acc</Link>
             <p>or</p>
-
-            <button onClick={handleWithGoogleLogIn} className="google">Login with google</button>
+<button onClick={handleWithGoogleLogIn} className="google">Login with google</button>
+            {/*  */}
             <button onClick={handleWithFacbookLogIn} className="google">Login with Facebook</button>
         </div>
 

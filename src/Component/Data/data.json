@@ -5,7 +5,8 @@
   "price": 50,
   "name": "Bike",
   "passenger": 2,
-  "photo": "https://lh3.googleusercontent.com/proxy/ZpDCkOFezXFzUOW4HXk944LUpJ1rUQr9-YzSOqsVU7t0VvSUzWBuJfjpmWdz-mTdhWfHS-Zcr2ss_bInOHR9tzUV3DyIHNm2Cu1Us6Z5awX6bCbif8brCDiHsxPbCw"
+  "map":"https://cdn.images.express.co.uk/img/dynamic/25/590x/secondary/Google-Maps-2746359.jpg?r=1604671439123",
+  "photo": "https://image.shutterstock.com/image-vector/splashing-biker-motorcycle-rider-260nw-369246113.jpg"
 },
 
 
@@ -14,6 +15,7 @@
   "price": 100,
   "name": "Car",
   "passenger":4,
+  "map":"https://cdn.images.express.co.uk/img/dynamic/25/590x/secondary/Google-Maps-2746359.jpg?r=1604671439123",
   "photo": "https://thumbs.dreamstime.com/b/top-view-white-car-isolated-background-clippin-clipping-path-117352903.jpg"
  
 },
@@ -23,18 +25,21 @@
   "price": 150,
   "name": "Bus",
   "passenger":50,
+  "map":"https://cdn.images.express.co.uk/img/dynamic/25/590x/secondary/Google-Maps-2746359.jpg?r=1604671439123",
   "photo": "https://www.seekpng.com/png/detail/46-460326_bus-clipart-toyota-transparent-background-bus-png.png",
   "email": "sblakemore2@boston.com"
+
  
 
 },
 
 {
   "id": 4,
+  "map":"https://cdn.images.express.co.uk/img/dynamic/25/590x/secondary/Google-Maps-2746359.jpg?r=1604671439123",
   "price": 250,
-  "name": "trine",
+  "name": "Trine",
   "passenger":200,
-  "photo": "https://cdn5.vectorstock.com/i/1000x1000/63/39/modern-high-speed-train-2-vector-2876339.jpg",
-  "email": "jhobben3@shinystat.com"
+  "photo": "https://cdn5.vectorstock.com/i/1000x1000/63/39/modern-high-speed-train-2-vector-2876339.jpg"
+ 
   
 }]

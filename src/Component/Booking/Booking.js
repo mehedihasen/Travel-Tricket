@@ -18,7 +18,9 @@ const Booking = () => {
           card.map(card=><div className="card" >
           <h2> {card.name}</h2>
           <img src={card.photo} alt=""/>
-          <Link to ={`/loction/${card.name}`}>Booking</Link>
+          <Link to ={`/loction/${card.name}`} className="book"
+          style={{textDecoration: "none"}}
+          >Booking</Link>
         </div>)
         }
          

@@ -16,3 +16,19 @@
  
     margin: 20px;
 }
+.card Link{
+    text-decoration: none;
+}
+ .book{
+    
+    background-color: tomato;
+    border-radius: 5px;
+    padding:5px 20px;
+    
+    
+}
+.card img{
+    margin: 10px 10px;
+    width: 200px;
+    height: 60%;
+}

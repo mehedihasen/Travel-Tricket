@@ -3,21 +3,31 @@ import { useParams } from 'react-router-dom';
 import "./loction.css"
 import Data from "../Data/data.json"
 
+
 const Loction = () => {
-    const [loc, setLoc] = useState({});
+    const [loc, setLoc] = useState({ Form: '', To: '' });
 
     const { name } = useParams();
     const info = Data.find(info => info.name === name)
-    const { photo, passenger, price } = info
-    // setLoc(info)
-    console.log(info);
+    const { photo, passenger, price, map } = info
 
 
 
     const handlesarch = (e) => {
-        setLoc(e.target.name = e.target.value)
+        if (e.target.name === "Form") {
+            const Form = e.target.value
+            const adder = { ...loc, Form }
+            setLoc(adder)
+
+        }
+        if (e.target.name === "To") {
+            const To = e.target.value
+
+            const adder = { ...loc, To }
+            setLoc(adder)
+
+        }
     }
-    console.log(loc);
 
 
     const hendelforam = (e) => {
@@ -32,21 +42,26 @@ const Loction = () => {
             <div className="serchloc">
                 <form onBlur={hendelforam}>
                     <h3>From</h3>
-                    <input type="text" name="from" id="" placeholder="set loction" required onBlur={handlesarch} />
+                    <input type="text" name="Form" id="" placeholder="set loction" required onBlur={handlesarch} />
                     <br />
                     <h3>To</h3>
-                    <input type="text" name="to" id="" placeholder="set loction where you will go " required onBlur={handlesarch} />
+                    <input type="text" name="To" id="" placeholder="set loction where you will go " required onBlur={handlesarch} />
                     <br />
                     <input type="submit" value="search" />
                 </form>
+                <div>
+                    <img src={map} alt=""/>
+                </div>
+
+  
             </div>
 
 
 
             <div className="info">
                 <div className="dis">
-                    <h3>From</h3>
-                    <h3>To</h3>
+                    <h3>From {loc.Form} </h3>
+                    <h3>To {loc.To}</h3>
                 </div>
                 <div className="rideInfo">
                     <span>{name}</span>
@@ -65,14 +80,12 @@ const Loction = () => {
                     <span>${price}</span>
                 </div>
             </div>
-
-
-
-
-            </div>
+           
+        </div>
 
 
     );
 };
+
 
 export default Loction;

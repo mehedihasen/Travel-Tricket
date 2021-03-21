@@ -22,7 +22,9 @@ function App() {
         <Switch>
           <Route path="/Home">
             <Home></Home>
+            
           </Route>
+          
           <PrivetRout path="/loction/:name">
             <Loction/>
           </PrivetRout>
