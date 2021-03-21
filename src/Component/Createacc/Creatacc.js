@@ -1,18 +1,22 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import firebaseConfig from '../LogInPages/FireBaseConfig';
 import firebase from "firebase/app";
 import  "./create.css"
+import { contextSher } from '../../App';
 
 
 const Creatacc = () => {
+
+    const [logInfo, setLogInfo] = useContext(contextSher);
+    console.log("contex :", logInfo);
     
-    const [user, setUser] = useState({
-        email :'',
-        password :'',
-        name : '',
-        error:'',
-        succes : false
-    })
+    // const [user, setUser] = useState({
+    //     email :'',
+    //     password :'',
+    //     name : '',
+    //     error:'',
+    //     succes : false
+    // })
     if (firebase.apps.length === 0) {
         firebase.initializeApp(firebaseConfig)
     }
@@ -30,29 +34,32 @@ const Creatacc = () => {
             IsVlaied = len && vlied;    
         }
         if (IsVlaied) {
-        const addinfo = {...user} 
+        const addinfo = {...logInfo} 
             addinfo[e.target.name] = e.target.value;
-            setUser(addinfo);
+          
+            setLogInfo(addinfo)
         }
-      console.log(user);
     } 
     const SubmitHandel =(e) => {
-        if (user.email && user.password) {
-            firebase.auth().createUserWithEmailAndPassword(user.email, user.password)
+       
+        if (logInfo.email && logInfo.password) {
+            firebase.auth().createUserWithEmailAndPassword(logInfo.email, logInfo.password)
             .then( res => {
-                const message = {...user}
+                const message = {...logInfo}
                 message.error= ""
                 message.succes = true
-                setUser(message)
+                
+                setLogInfo(message)
                 
             })
             .catch((error) => {
              
              
-              const message = {...user}
+              const message = {...logInfo}
               message.error= error.message
               message.succes = false
-              setUser(message)
+           
+            setLogInfo(message)
              
               // ..
             });
@@ -71,9 +78,9 @@ const Creatacc = () => {
                 <br/>
                 <input type="submit" value="submit" className="submit"/>  
              </form>
-        <p style={{color:"red"}}>{user.error}</p>
+        <p style={{color:"red"}}>{logInfo.error}</p>
         {
-            user.succes && <p style={{color:"green"}}>user creaeted sucssfuly</p>
+        logInfo.succes && <p style={{color:"green"}}>user creaeted sucssfuly</p>
         }
         </div>
     );
