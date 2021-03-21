@@ -11,7 +11,7 @@
 .card{
     text-align: center;
     background-color: azure;
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 10;
  
     margin: 20px;
@@ -21,9 +21,11 @@
 }
  .book{
     
-    background-color: tomato;
+    background-color: rgb(231, 226, 226);
+    font-size: 20px;
     border-radius: 5px;
     padding:5px 20px;
+    color:rgb(252, 69, 37);
     
     
 }

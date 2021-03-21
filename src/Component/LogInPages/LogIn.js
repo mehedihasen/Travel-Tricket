@@ -128,7 +128,7 @@ const LogIn = () => {
                 </form>
 
             </div>
-            <Link to="/Creatacc">Create acc</Link>
+            <Link to="/Creatacc" className="google">Create acc</Link>
             <p>or</p>
 <button onClick={handleWithGoogleLogIn} className="google">Login with google</button>
             {/*  */}
