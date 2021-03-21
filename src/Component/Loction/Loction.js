@@ -50,7 +50,7 @@ const Loction = () => {
                     <input type="submit" value="search" />
                 </form>
                 <div>
-                    <img src={map} alt=""/>
+                    <img src={map} alt="" className="map"/>
                 </div>
 
   
